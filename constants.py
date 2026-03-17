@@ -104,6 +104,8 @@ SEARCH_SERVICE_INFO_TOOL_NAME = "search_service_info_tool"
 SEARCH_SERVICE_INFO_TOOL_DESCRIPTION = "自社サービス「EcoTee」に関する情報を参照したい時に使う"
 SEARCH_CUSTOMER_COMMUNICATION_INFO_TOOL_NAME = "search_customer_communication_tool"
 SEARCH_CUSTOMER_COMMUNICATION_INFO_TOOL_DESCRIPTION = "顧客とのやりとりに関する情報を参照したい時に使う"
+SEARCH_ALL_INTERNAL_INFO_TOOL_NAME = "search_all_internal_info_tool"
+SEARCH_ALL_INTERNAL_INFO_TOOL_DESCRIPTION = "社内資料全体（会社・サービス・顧客対応履歴）を横断して情報を参照したい時に使う"
 SEARCH_WEB_INFO_TOOL_NAME = "search_web_tool"
 SEARCH_WEB_INFO_TOOL_DESCRIPTION = "自社サービス「HealthX」に関する質問で、Web検索が必要と判断した場合に使う"
 

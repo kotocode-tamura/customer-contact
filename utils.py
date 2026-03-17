@@ -198,6 +198,25 @@ def run_customer_doc_chain(param):
     return ai_msg["answer"]
 
 
+def run_all_internal_doc_chain(param):
+    """
+    社内資料全体（会社・サービス・顧客とのやり取り）参照用のTool設定関数
+
+    Args:
+        param: ユーザー入力値
+
+    Returns:
+        LLMからの回答
+    """
+    # 社内資料全体を参照するRAGのChainを実行してLLMからの回答取得
+    ai_msg = st.session_state.rag_chain.invoke({"input": param, "chat_history": st.session_state.chat_history})
+
+    # 会話履歴への追加
+    st.session_state.chat_history.extend([HumanMessage(content=param), AIMessage(content=ai_msg["answer"])])
+
+    return ai_msg["answer"]
+
+
 def delete_old_conversation_log(result):
     """
     古い会話履歴の削除

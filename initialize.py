@@ -143,6 +143,12 @@ def initialize_agent_executor():
             func=utils.run_customer_doc_chain,
             description=ct.SEARCH_CUSTOMER_COMMUNICATION_INFO_TOOL_DESCRIPTION
         ),
+        # 社内資料全体を横断検索するTool
+        Tool(
+            name=ct.SEARCH_ALL_INTERNAL_INFO_TOOL_NAME,
+            func=utils.run_all_internal_doc_chain,
+            description=ct.SEARCH_ALL_INTERNAL_INFO_TOOL_DESCRIPTION
+        ),
         # Web検索用のTool
         Tool(
             name = ct.SEARCH_WEB_INFO_TOOL_NAME,
